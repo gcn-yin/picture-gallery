@@ -48,6 +48,7 @@ func main() {
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <style type="text/css">
 body { display: flex; flex-direction: column; align-items: center; }
+img { max-width: 100%s; }
 </style>
 <title>Picture Gallery</title>
 </head>
@@ -56,7 +57,7 @@ body { display: flex; flex-direction: column; align-items: center; }
 </body>
 </html>
 `
-	htmlResult := fmt.Sprintf(htmlTemplate, htmlBody)
+	htmlResult := fmt.Sprintf(htmlTemplate, "%", htmlBody)
 	file, err := os.Create("index.html")
 	if err != nil {
 		log.Fatal(err)
