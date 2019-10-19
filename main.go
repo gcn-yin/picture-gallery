@@ -61,7 +61,7 @@ body { display: flex; flex-direction: column; align-items: center; }
 	if err != nil {
 		log.Fatal(err)
 	}
-	l, err := file.WriteString(htmlResult)
+	_, err = file.WriteString(htmlResult)
 	if err != nil {
 		log.Fatal(err)
 		file.Close()
