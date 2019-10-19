@@ -32,7 +32,6 @@ func main() {
 	for _, f := range files {
 		name := f.Name()
 		if isPicture(name) {
-			fmt.Println(name)
 			names = append(names, fmt.Sprintf("<img src=\"%s\" alt=\"%s\"/>", path.Join(rootPath, name), name))
 		}
 	}
@@ -69,9 +68,8 @@ body { display: flex; flex-direction: column; align-items: center; }
 		return
 	}
 	fmt.Println("create index.html done")
-	fmt.Println(l, "bytes written successfully")
 	fs := http.FileServer(http.Dir("."))
 	http.Handle("/", fs)
-	log.Println("Listening... http://localhost:8080")
+	log.Println("http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
 }
