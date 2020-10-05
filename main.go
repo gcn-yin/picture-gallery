@@ -11,7 +11,7 @@ import (
 )
 
 func isPicture(fileName string) bool {
-	return strings.HasSuffix(fileName, "png") || strings.HasSuffix(fileName, "jpg") || strings.HasSuffix(fileName, "jpeg") || strings.HasSuffix(fileName, "JPG") || strings.HasSuffix(fileName, "PNG") || strings.HasSuffix(fileName, "JPEG")
+	return strings.HasSuffix(fileName, "png") || strings.HasSuffix(fileName, "jpg") || strings.HasSuffix(fileName, "jpeg") || strings.HasSuffix(fileName, "JPG") || strings.HasSuffix(fileName, "PNG") || strings.HasSuffix(fileName, "JPEG") || strings.HasSuffix(fileName, "gif")
 }
 
 func main() {
