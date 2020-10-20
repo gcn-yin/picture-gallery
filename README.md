@@ -5,7 +5,7 @@ Usage: generate index.html that contains all pictures url in the same directory.
 # Compile
 
 ```
-$ go build -o pg main.go
+go build -o pg main.go
 ```
 
 # Example
@@ -60,13 +60,3 @@ generate index.html done
 ```
 
 You can open `http://localhost:8080` and view pictures.
-
-# Docker
-
-If you want to use docker to set up environment to view pictures, you can use `hezhaohuang/pictures-gallery:1` image.
-
-```
-$ docker run -d -v /path/to/pictures:/workdir/pictures -p 8080:8080 --name pg-local hezhaohuang/pictures-gallery:1 
-```
-
-And you can open `http://localhost:8080` to view.
