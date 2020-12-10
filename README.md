@@ -28,3 +28,17 @@ $ pg
 It will generate a `index.html` file, and set up a static server.
 
 You can open `http://localhost:8080` and view pictures.
+
+# Cross compile
+
+Install `gox`
+
+```
+go get github.com/mitchellh/gox
+```
+
+Run `gox`
+
+```
+gox
+```
