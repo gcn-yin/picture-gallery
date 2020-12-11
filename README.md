@@ -8,21 +8,12 @@ Usage: generate index.html that contains all pictures url in the same directory.
 go build -o pg main.go
 ```
 
-# Example
+# Run
 
-If you have a directory like this structure.
-
-```
-$ ls
-1.png
-2.jpg
-3.jpeg
-```
-
-You can enter
+Enter a directory containing pictures.
 
 ```
-$ pg
+$ pg .
 ```
 
 It will generate a `index.html` file, and set up a static server.
